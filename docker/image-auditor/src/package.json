@@ -1,0 +1,13 @@
+{
+  "name": "docker_musician",
+  "version": "1.0.0",
+  "description": "Musician docker",
+  "author": "Daniel Oliveira Paiva ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}
