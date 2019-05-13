@@ -1,11 +1,9 @@
 
 function treatMsg(msg) {
 	var json = JSON.parse(msg.toString());
-	if(!musicians.has(json.uuid)){
-		var instru = instrument(json.music);
-		var actualTime = Date.now();
-		musicians.set(json.uuid, [instru,json.active,actualTime]);
-	}
+	var instru = instrument(json.music);
+	musicians.set(json.uuid, [instru,json.active, Date.now()]);
+	
 }
 
 function instrument(music) {
